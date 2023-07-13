@@ -2,7 +2,7 @@ import numpy as np
 import streamlit as st
 from pickle import load
 
-model = load(open('models/xgb.pkl', 'rb'))
+model = load(open('xgb.pkl', 'rb'))
 
 st.write("<h1 style='text-align: center; color: #FFD700;'>Medical Insurance Predictor👨‍⚕️</h1>", unsafe_allow_html = True)
 st.write('This app predicts the insurance premium based on age, BMI, and smoking status.')
